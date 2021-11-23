@@ -3,7 +3,9 @@
     box-sizing: border-box;
 }
 
-body {
+
+/*body,
+body-mp33 {
     background-image: url(../img/99825.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,17 +14,41 @@ body {
     padding: 90px 20px 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+*/
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+header {
+    margin-top: 0;
+    width: 100%;
+    height: 600px;
+    background: url(../img/cropped-1366-768-910923.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.comput:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(56, 49, 49, 0.2);
+}
 
 .comput {
+    transition: all 0.25s;
+    margin: 0px 200px;
     background-position: center;
     background-size: cover;
     border-radius: 12px;
-    background-image: url(../img/PicsArt_11-20-10.18.15.jpg);
     background-attachment: fixed;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 .comput-ss {
+    padding-bottom: 0px;
     background-image: url(../img/PicsArt_11-20-09.55.15.jpg);
     background-position: center;
     background-size: cover;
@@ -146,7 +172,7 @@ body {
     }
 }
 
-.zoom {
+services .zoom {
     padding: 0px 12px;
     padding-top: 12px;
 }
@@ -155,7 +181,7 @@ body {
     font-family: 'Space Mono', monospace;
 }
 
-#carrusel {
+body__page #carrusel {
     background-color: white;
     margin-top: 80px;
     padding-top: 20px;
@@ -233,13 +259,21 @@ img {
 }
 
 .col p {
-    margin-right: 75px;
-    margin-left: 75px;
-    margin-top: 75px;
+    padding: 89px 72px;
 }
 
 
 /*INICIO DE LAS CARDS*/
+
+.about-services {
+    background: #c4c1c1;
+    padding: 2px 0px;
+}
+
+.services {
+    background: #c4c1c1;
+    padding: 74px 0px;
+}
 
 .container__card {
     max-width: 1200px;
@@ -340,6 +374,107 @@ img {
 
 
 /*FIN DE LAS CARDS*/
+
+
+/*Targets*/
+
+.wrap {
+    width: 1100px;
+    margin: 50px auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.tarjeta-wrap {
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+
+.tarjeta {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/99825.jpg);
+    border-radius: 7px;
+    width: 300px;
+    height: 350px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: .7s ease;
+    transition: .7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.adelante,
+.atras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.adelante {
+    width: 100%;
+}
+
+.atras {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-family: "open sans";
+}
+
+.tarjeta-wrap:hover .tarjeta {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.card1 {
+    border-radius: 7px;
+    background: center;
+    background-image: url(https://p1.pxfuel.com/preview/973/445/193/xmas-presents-gifts-man-male-december.jpg);
+    background-size: cover;
+}
+
+.card2 {
+    background: center;
+    background-image: url(https://www.eluniversal.com.mx/sites/default/files/2021/01/19/los-relojes-inteligentes-pueden-detectar-covid-19-antes-de-que-la-persona-sepa-que-esta-enferma.jpg);
+    background-size: cover;
+}
+
+.card3 {
+    background: center;
+    background-image: url(https://www.nexteducacion.com/wp-content/uploads/2019/07/achievement-3408115_1920.jpg);
+    background-size: cover;
+}
+
+
+/*Fin de Targets*/
 
 
 /*INICIO DE FOOTER*/
